@@ -1,0 +1,23 @@
+# Local build products
+SlimStats.app/
+*.app/
+
+# Build-time, host-specific artwork generated from the current Mac
+DeviceArtwork.rgba
+DeviceArtwork.plist
+
+# Local backups and verification output
+backups/
+verify/results/
+verify/probe
+verify/*.o
+验证记录-*.md
+
+# macOS metadata
+.DS_Store
+
+# Editor and local tooling files
+.build/
+.swiftpm/
+.vscode/
+.idea/
