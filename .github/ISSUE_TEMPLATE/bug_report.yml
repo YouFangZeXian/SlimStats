@@ -1,0 +1,44 @@
+name: 问题反馈 / Bug report
+description: 报告显示、采集、内存占用或构建问题 / Report a display, sampling, memory, or build issue.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先查看 README 常见问题。提交截图或日志前，请隐藏序列号、个人路径和敏感内容。
+        Check the README first. Redact serial numbers, personal paths, and sensitive information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题与预期 / Problem and expected behavior
+      description: 实际发生了什么？你期望什么？ / What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      placeholder: |
+        1. 打开哪个页面 / Open which page
+        2. 执行什么操作 / Perform which action
+        3. 观察到什么 / Observe the result
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境 / Environment
+      description: App 版本/build、macOS 版本、芯片型号及安装来源 / App build, macOS, chip, and installation source.
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: 设置与测量 / Settings and measurements
+      description: |
+        内存问题请注明刷新间隔、排行开关、页面、扫描范围、指标（RSS、footprint 或活动监视器）、测量时长及关联服务。
+        For memory issues, include interval, rankings, UI/scan state, metric (RSS, footprint, or Activity Monitor), duration, and associated services.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 可选截图或输出 / Optional screenshots or output
+      description: 请脱敏后再提交，不需要完整个人目录列表。 / Redact private information; full personal directory listings are unnecessary.

@@ -1,0 +1,27 @@
+name: 建议 / Feature request
+description: 改进内存与磁盘监测或低占用体验 / Improve memory/storage monitoring or resource use.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        SlimStats 专注内存和磁盘监测，优先保持原生与低开销。
+        SlimStats focuses on memory and storage monitoring with native UI and low overhead.
+  - type: textarea
+    id: need
+    attributes:
+      label: 使用场景 / Use case
+      description: 目前遇到什么问题，影响了什么操作？ / What problem affects your workflow?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 期望的改进 / Proposed improvement
+      description: 描述期望行为及对采样、后台工作或内存的影响。 / Describe the behavior and potential sampling, background-work, or memory cost.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 已尝试的方法 / Alternatives considered
+      description: 可选，是否能通过现有设置解决？ / Optional; can existing interval/settings changes help?
