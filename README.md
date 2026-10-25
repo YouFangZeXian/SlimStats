@@ -24,6 +24,32 @@ SlimStats 适合只想随时看到 Mac 剩余内存、已用内存，并偶尔�
 | 原生且无第三方依赖 | Swift + AppKit，使用 macOS 系统 API，无需 WebView、Electron 或 SwiftUI |
 | 本地工作 | 无需账号，无遥测；监测数据和磁盘扫描结果不会上传 |
 
+## 界面预览
+
+以下为实际安装的 SlimStats 1.3（build 11）在 2026-10-25 运行时的原始截图。读数仅展示界面，不代表固定内存占用或性能测试结果。
+
+**内存页面：用量分类与最近的内存变化。**
+
+<img src="docs/images/memory.jpg" width="900" alt="SlimStats 实际内存页面，显示内存分类、占用比例及历史趋势">
+
+<details>
+<summary>查看刷新频率与低占用设置</summary>
+
+可选 1 / 3 / 5 / 10 / 30 秒；一键低占用设置采用 10 秒采样并关闭应用排行。
+
+<img src="docs/images/settings.jpg" width="900" alt="SlimStats 通用设置，展开显示五档内存刷新间隔及一键低占用选项">
+
+</details>
+
+<details>
+<summary>查看磁盘空间检查</summary>
+
+此图扫描的是公开项目源码的临时副本，展示按已分配空间排序的真实结果；不会展示个人文件，也不会删除文件。
+
+<img src="docs/images/disk.jpg" width="900" alt="SlimStats 实际磁盘检查结果，扫描公开源码临时目录并按占用大小排列">
+
+</details>
+
 ## 功能
 
 - **内存详情**：已用、可用、App、联动、压缩内存和交换区，附最近 120 个采样点的趋势。

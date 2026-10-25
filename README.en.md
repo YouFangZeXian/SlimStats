@@ -21,6 +21,32 @@ SlimStats is for people who want to keep an eye on free and used RAM and occasio
 - **Native implementation:** Swift + AppKit and macOS APIs, without third-party dependencies, Electron, WebView, or SwiftUI.
 - **Local operation:** no account, telemetry, or uploads of monitoring data and scan results.
 
+## Screenshots
+
+These unmodified screenshots show the installed SlimStats 1.3 (build 11), captured on October 25, 2026. Readings illustrate the interface; they are not fixed resource-use claims or benchmark results. The app UI is primarily Simplified Chinese.
+
+**Memory page: usage categories and recent memory history.**
+
+<img src="docs/images/memory.jpg" width="900" alt="Actual SlimStats memory page with usage categories, percentage, and history chart">
+
+<details>
+<summary>Refresh intervals and low-resource settings</summary>
+
+Choose 1, 3, 5, 10, or 30 seconds. The low-resource preset uses 10-second sampling and disables process rankings.
+
+<img src="docs/images/settings.jpg" width="900" alt="Actual settings page with five memory refresh intervals and the low-resource preset">
+
+</details>
+
+<details>
+<summary>Disk space inspection</summary>
+
+This scan uses a temporary copy of the public project source and shows actual results sorted by allocated space. No personal files are shown and no files are deleted.
+
+<img src="docs/images/disk.jpg" width="900" alt="Actual disk scan of a temporary public-source directory, sorted by allocated space">
+
+</details>
+
 ## Features
 
 | Area | Available information |
